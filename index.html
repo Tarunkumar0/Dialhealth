@@ -1,0 +1,736 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>
+<html lang="en" class="no-js ie6">
+   <![endif]-->
+   <!--[if IE 7]>
+   <html lang="en" class="no-js ie7">
+      <![endif]-->
+      <!--[if IE 8]>
+      <html lang="en" class="no-js ie8">
+         <![endif]-->
+         <!--[if gt IE 8]>
+         <!-->
+            <html lang="en" class="no-js">
+                <!--
+                <![endif]-->
+         <head>
+            <meta charset="UTF-8">
+            <title>Dial Health 24/7 | Home </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <link rel="shortcut icon" href="favicon.png">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/animate.css">
+            <link rel="stylesheet" href="css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/slick.css">
+            <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
+            <link rel="stylesheet" href="css/style.css">
+            <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+         </head>
+         <body>
+
+            <div class="pre-loader">
+               <div class="load-con">
+                  <img src="img/freeze/logo.png" class="animated fadeInDown" alt="">
+                  <div class="spinner">
+                     <div class="bounce1"></div>
+                     <div class="bounce2"></div>
+                     <div class="bounce3"></div>
+                  </div>
+               </div>
+            </div>
+            <header id="home">
+               <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                  <div class="container">
+                     <!-- Brand and toggle get grouped for better mobile display -->
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="fa fa-bars fa-lg"></span>
+                        </button>
+                        <button type="button" class="navbar-toggle" style="border:none!important" data-target="#loginModal"  data-toggle="modal"> 
+                        Login 
+                        </button>
+                        <a id="home" class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="" class="logo">
+                        </a>
+                     </div>
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                           <li>
+                              <a href="#home">Home</a>
+                           </li>
+                           <li>
+                              <a href="#aboutus">About us</a>
+                           </li>
+                           <li>
+                              <a href="#services">Services</a>
+                           </li>
+                           <li>
+                              <a href="#contact">Contact us</a>
+                           </li>
+                           <li>
+                              <button class="btn btn-primary inverse bt-small" data-target="#loginModal"type="button"  data-toggle="modal">Login</button>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- /.navbar-collapse -->
+                  </div>
+                  <!-- /.container-->
+               </nav>
+               <div  class="background-slider-container">
+               <div class="background-slider" >
+               <div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <div class="slide1"></div>
+                     </div>
+                     <div class="item">
+                        <div class="slide2"></div>
+                     </div>
+                     <div class="item">
+                        <div class="slide3"></div>
+                     </div>
+                  </div>
+                  <!-- .carousel-inner -->
+                  <div  class="container carousel-overlay text-center">
+                     <h1 class=" sp-effect3 active animated fadeInDown">Healthcare On The Go</h1>
+                     <p class="lead">Find a nearby doctor or dentist or book appointment &nbsp;  <i class="fa fa-mobile"></i> +91- 9989-8989-898 </p>
+                     <div class="col-xs-12  col-md-8 col-md-offset-2 col-sm-12 homeSearchbar  ">
+                        <div class="input-group col-xs-12">
+                           <div class="input-group-btn input-group-lg input-group-md search-panel">
+                              <button type="button" class="btn btn-lg btn-default dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-map-marker"></i>
+                              <span id="search_concept">Bangalore</span>
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                 <li>
+                                    <a href="#">Locations</a>
+                                 </li>
+                                 
+                              </ul>
+                           </div>
+                           <input type="hidden" name="search_param" value="all" id="search_param">
+                           <input type="search "  class="form-control input-lg" data-provide="typeahead" placeholder="Search term..." autocomplete="off" data-items="6" data-source="[&quot;Accpunturist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY &quot;,&quot;Aethestic Medicine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Aethestic dentist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Aethestic Surgeon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Ajay Sharma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOCTOR &quot;,&quot;Allergist/imunologist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;]">
+                           <span class="input-group-btn input-group-lg input-group-md ">
+                           <button id="btnsearch" class="btn btn-default btn-lg" type="button">
+                           <span class="fa fa-search"></span>
+                           </button>
+                           </span>
+                        </div>
+                     </div>
+                     <!--How It Works -->
+                     <div class="row">
+                        <div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2">
+                           <h2 class="sp-effect3 active animated fadeInDown">How It Works?</h2>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                           <div class="howitworks-item scrollpoint sp-effect2">
+                              <i class="fa fa-download fa-2x"></i>
+                              <h3>Search Doctors</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" >
+                           <div class="howitworks-item scrollpoint sp-effect5">
+                              <i class="fa fa-mobile fa-2x"></i>
+                              <h3>Create Account</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" >
+                           <div class="howitworks-item scrollpoint sp-effect5">
+                              <i class="fa fa-users fa-2x"></i>
+                              <h3>Book an Appointment</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <div class="wrapper">
+               <section id="topsearch">
+                  <div class="container">
+                     <div class="section-heading scrollpoint sp-effect3">
+                        <h1>Top Sugested Searches</h1>
+                        <div class="divider"></div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                     </div>
+                     <div class="slider filtering scrollpoint sp-effect5 " >
+                        <div class="one">
+                           <img src="img/people/img1-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary  bt-small" type="button" data-target="#booknow" data-toggle="modal">Book Now</button>
+                        </div>
+                        <div class="two">
+                           <img src="img/people/img2-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary  bt-small" type="button" data-target="#booknow" data-toggle="modal">Book Now</button>
+                        </div>
+                        <div class="three">
+                           <img src="img/people/img3-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary  bt-small" type="button" data-target="#booknow" data-toggle="modal">Book Now</button>
+                        </div>
+                        <div class="one">
+                           <img src="img/people/img4-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary bt-small" type="button" data-target="#booknow" data-toggle="modal">Book Now</button>
+                        </div>
+                        <div class="one">
+                           <img src="img/people/img2-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary  bt-small" type="button" data-target="#booknow" data-toggle="modal">Book Now</button>
+                        </div>
+                        <div class="two">
+                           <img src="img/people/img3-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary  bt-small" type="button" data-target="#booknow" data-toggle="modal">Book Now</button>
+                        </div>
+                        <div class="three">
+                           <img src="img/people/img1-small.jpg" alt="Dr. Daisy Jackson" class="img-responsive">
+                           <h4>Dr. Daisy Jackson</h4>
+                           <strong>BDS, FICOI</strong>
+                           <br>
+                           <strong>Dentist</strong>
+                           <br>
+                           <button class="btn btn-primary  bt-small" type="button" data-target="#loginModal" data-toggle="modal">Book Now</button>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+           <section id="aboutus">
+            <div class="layer">
+               <div class="container">
+                
+                
+
+                <div class="row">
+                    <div class="col-md-9 col-sm-9 col-xs-9">
+                     <div class="section-heading scrollpoint sp-effect3">
+                    <h1>About Us</h1>
+                    
+                    <p>One Stop of all your health care need</p>
+                </div>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur semper ultrices eros nec ultricies. Curabitur sit amet aliquam leo, a fringilla ex. Nulla hendrerit, nibh cursus consequat ornare, orci ipsum venenatis dolor, non hendrerit elit erat sit amet erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla eu consequat mauris. Aliquam lacinia sollicitudin tortor ac facilisis. Nulla congue eros euismod tempus iaculis. Proin lacinia sem sit amet <strong>justo blandit sagittis.</strong> Vestibulum commodo vulputate magna, at ornare metus volutpat id.  Nulla eu consequat mauris. Aliquam lacinia sollicitudin tortor ac facilisis. Nulla congue eros euismod tempus iaculis. Proin lacinia sem sit amet justo blandit sagittis. Vestibulum commodo vulputate magna, at ornare metus volutpat id.
+ 
+ </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                     
+                        <div class="about-item scrollpoint sp-effect5">
+                            <img src="img/people/doctor.png" alt="vector-doctor" class="img-responsive padding-top-60">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div></div>
+        </section>
+               <section id="services">
+                  <div class="container">
+                     <div class="section-heading scrollpoint sp-effect3">
+                        <h1>Services</h1>
+                        <div class="divider"></div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+                           <div class="media media-left services">
+                              <a class="pull-right" href="#">
+                              <i class="fa fa-cogs fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media media-left services">
+                              <a class="pull-right" href="#">
+                              <i class="fa fa-envelope fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media media-left services">
+                              <a class="pull-right" href="#">
+                              <i class="fa fa-users fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media media-left services">
+                              <a class="pull-right" href="#">
+                              <i class="fa fa-comments fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media media-left services">
+                              <a class="pull-right" href="#">
+                              <i class="fa fa-calendar fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4" >
+                           <img src="img/bg/iphone-freeze.png" class="img-responsive scrollpoint sp-effect5" alt="">
+                        </div>
+                        <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+                           <div class="media services">
+                              <a class="pull-left" href="#">
+                              <i class="fa fa-map-marker fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media services">
+                              <a class="pull-left" href="#">
+                              <i class="fa fa-film fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media services">
+                              <a class="pull-left" href="#">
+                              <i class="fa fa-compass fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media services">
+                              <a class="pull-left" href="#">
+                              <i class="fa fa-picture-o fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                           <div class="media active services">
+                              <a class="pull-left" href="#">
+                              <i class="fa fa-plus fa-2x"></i>
+                              </a>
+                              <div class="media-body">
+                                 <h3 class="media-heading">Lorem ipsum</h3>
+                                 Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="testimonials">
+                  <div class="container">
+                     <div class="section-heading inverse scrollpoint sp-effect3">
+                        <h1>Testomonials</h1>
+                        <div class="divider"></div>
+                        <p>Read What's The People Are Saying About Us</p>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-10 col-md-push-1 scrollpoint sp-effect3">
+                           <div class="testimonial-filtering">
+                              <div class="testimonial">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <div class="testimonial-person">
+                                          <img src="http://api.randomuser.me/portraits/women/94.jpg" alt="" class="img-responsive">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="testimonial-comment">
+                                          <h3>“I love Dial-Health24/7, I highly recommend it, Everyone Try It Now”</h3>
+                                          <p>
+                                             - Krin Fox
+                                             <span>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star-o fa-lg"></i>
+                                             </span>
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="testimonial rollitin">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <div class="testimonial-person">
+                                          <img src="http://api.randomuser.me/portraits/men/70.jpg" alt="" class="img-responsive">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="testimonial-comment">
+                                          <h3>“Dial Health 24/7 Is The Best website,They have huge database for doctors. ”</h3>
+                                          <p>
+                                             - Theodore Willis
+                                             <span>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star-half-o fa-lg"></i>
+                                             <i class="fa fa-star-o fa-lg"></i>
+                                             </span>
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="testimonial rollitin">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <div class="testimonial-person">
+                                          <img src="http://api.randomuser.me/portraits/men/93.jpg" alt="" class="img-responsive">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="testimonial-comment">
+                                          <h3>“Keep It Up Guys Your Work Rules, Cheers :)”</h3>
+                                          <p>
+                                             - Ricky Grant
+                                             <span>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star fa-lg"></i>
+                                             <i class="fa fa-star-half-o fa-lg"></i>
+                                             <i class="fa fa-star-o fa-lg"></i>
+                                             </span>
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="contact" class="doublediagonal">
+                  <div class="container">
+                     <div class="section-heading scrollpoint sp-effect3">
+                        <h1>Contact</h1>
+                        <div class="divider"></div>
+                        <p>For more info and contact, contact us!</p>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="row">
+                              <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                                 <form role="form" data-toggle="validator">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control"  placeholder="Your name">
+                                    </div>
+                                    <div class="form-group">
+                                       <input type="email" class="form-control"  placeholder="Your email">
+                                    </div>
+                                    <div class="form-group">
+                                       <textarea cols="30" rows="10" class="form-control"  placeholder="Your message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit My Query</button>
+                                 </form>
+                              </div>
+                              <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                                 <div class="media">
+                                    <a class="pull-left" href="#" >
+                                    <i class="fa fa-map-marker fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                       <h4 class="media-heading">4, Some street, Bangalore, India</h4>
+                                    </div>
+                                 </div>
+                                 <div class="media">
+                                    <a class="pull-left" href="#" >
+                                    <i class="fa fa-envelope fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                       <h4 class="media-heading">
+                                          <a href="mailto:contact@oleose.com">contact@dialhealth247.com</a>
+                                       </h4>
+                                    </div>
+                                 </div>
+                                 <div class="media">
+                                    <a class="pull-left" href="#" >
+                                    <i class="fa fa-phone fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                       <h4 class="media-heading">+1 91 2345 678 909</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <footer>
+                  <div class="container">
+                     <a href="#" class="scrollpoint sp-effect3">
+                     <img src="img/freeze/logo.png" alt="" class="logo">
+                     </a>
+                     <div class="social">
+                        <a href="#" class="scrollpoint sp-effect3">
+                        <i class="fa fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="scrollpoint sp-effect3">
+                        <i class="fa fa-google-plus fa-lg"></i>
+                        </a>
+                        <a href="#" class="scrollpoint sp-effect3">
+                        <i class="fa fa-facebook fa-lg"></i>
+                        </a>
+                     </div>
+                     <div class="rights">
+                        <p>Copyright &copy; 2015</p>
+                        <p>All Rights Reserved by
+                           <a href="#" target="_blank"> Dial Health 24/7</a>
+                        </p>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+            <!-- Modal Popup For Login -->
+            <div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+               <div class="modal-dialog modal-sm">
+                  <div  class="modal-content">
+                     <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Join Dial-Health24/7 today</h4>
+                     </div>
+                     <div class="modal-body">
+                        <!-- The form is placed inside the body of modal -->
+                        <div class="row">
+                           <!-- <div class="col-md-6 scrollpoint sp-effect1"><img src="img/doctor.png" alt="vector-doctor" class="img-responsive"></div>-->
+                           <div class="col-md-12 ">
+                              <form class="login-form scrollpoint sp-effect2"  method="post" action="#" data-toggle="validator" >
+                                login using social media account to create a profile on Dial- Health24/7
+                                 <div class="social-buttons">
+                                    <a href="http://www.facebook.com"  target="_blank" class="btn btn-fb">
+                                    <i class="fa fa-facebook"></i> Facebook
+                                    </a>
+                                    <a href="http://www.twitter.com"  target="_blank" class="btn btn-gp">
+                                    <i class="fa fa-google-plus"></i> Google-Plus
+                                    </a>
+                                 </div>
+                                 or
+                                 <div class="form-group">
+                                 <label>Email-Id</label>
+                                    <input type="email" class="form-control" required >
+                                 </div>
+                                 <div class="form-group">
+                                 <label>Password</label>
+                                    <input type="password" class="form-control" required  >
+                                    <div class="help-block text-right">
+                                       <a href="javascript:;" id="forget-password">Forget the password ?</a>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <button type="submit" class="btn btn-primary inverse btn-block">Sign in</button>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox"> keep me logged-in
+                                    </label>
+                                 </div>
+                                 <div class="bottom text-center">
+                                    Don't have an account yet ? 
+                                    <br>
+                                    <a href="javascript:;" id="register-btn">
+                                    <b>Create an account</b>
+                                    </a>
+                                 </div>
+                              </form>
+                              <form class="forget-form scrollpoint sp-effect2" role="form"  >
+                                 <h2>Forget Password ?</h2>
+                                 <p>
+                                    Enter your e-mail address below to reset your password.
+                                 </p>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-actions">
+                                    <button type="button" id="back-btn" class="btn btn-primary inverse">
+                                    Go Back </button>
+                                    <button type="submit" class="btn btn-primary inverse pull-right" id="activation">
+                                    Submit 
+                                    </button>
+                                 </div>
+                              </form>
+                              <form class="register-form" action="index.html" method="post">
+                                 <div class="row">
+                                    <div class="col-md-12">
+
+                                                             <h2>Register Now </h2>
+                                
+                                    
+                                    <div class="col-md-6  scrollpoint sp-effect2">
+                                       <!-- <img src="img/doctor.png" alt="vector-doctor" class="img-responsive text-center"> -->
+
+ <p>
+                                    Enter your personal details below:
+                                 </p>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="text" placeholder="Name" name="fullname"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="text" placeholder="Last Name" name="fullname"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                    <div class="input-icon">
+                                       <input class="form-control " type="text" placeholder="Email" name="email"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="text" placeholder="Mobile No." name="address"/>
+                                    </div>
+                                 </div>
+                                 </div> 
+                                 <div class="col-md-6  scrollpoint sp-effect2">
+                                 <p>
+                                    Enter your account details below:
+                                 </p>
+                                 
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                    <label>Password </label>
+                                       <input class="form-control " type="password" autocomplete="off" id="register_password"  name="password"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    
+                                    <label>Re-type Password </label>   
+                                          <input class="form-control " type="password" autocomplete="off"  name="rpassword"/>
+                                    
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label>
+                                    <input type="checkbox" name="tnc"/> I agree to the 
+                                    <a href="#">
+                                    Terms and Conditions </a>
+                                    and 
+                                    <a href="#">
+                                    Privacy Policy </a>
+                                    </label>
+                                    <div id="register_tnc_error"></div>
+                                 </div></div>
+<div class="clearfix"></div>
+                                 <div class="form-actions">
+                                    <button id="register-back-btn" type="button" class="btn btn-primary inverse">
+                                    Go Back </button>
+                                    <button type="submit" id="register-submit-btn" class="btn btn-primary inverse pull-right">
+                                    Register Me 
+                                    </button>
+                                 </div>
+                              </div>
+                              </div>
+                           </div>
+                              </form>
+                              <div class="clearfix"></div>
+                              <form class="activation-form scrollpoint sp-effect2" role="form" >
+                                 <h2>Activate Now</h2>
+                                 <p>
+                                    Enter the code what you got in your email & reset your password.
+                                 </p>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="password" autocomplete="off" placeholder="Enter code"  name="activate"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-actions">
+                                    <button type="button" id="back-btn" class="btn btn-primary inverse">
+                                    Go Back </button>
+                                    <button type="submit" class="btn btn-primary inverse pull-right" id="activation">
+                                    Submit 
+                                    </button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/slick.min.js"></script>
+            <script src="js/placeholdem.min.js"></script>
+            <script type="text/javascript" src="js/typeahead.bundle.js"></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/scripts.js"></script>
+            <script type="text/javascript" src="js/jquery.form.js"></script>
+           
+            
+            <script>
+               $(document).ready(function() {
+                   dialhealth.preLoader();
+            $(".login-form").validate();
+            $('.dropdown-toggle').dropdown();
+
+               });
+                
+
+              
+            </script>
+
+               <a href="#0" class="cd-top">Top</a>
+         </body>
+      </html>
+
