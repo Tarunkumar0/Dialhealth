@@ -112,14 +112,14 @@
                               <span class="caret"></span>
                               </button>
                               <ul class="dropdown-menu" role="menu">
-                                 <li>
-                                    <a href="#">Locations</a>
-                                 </li>
-                                 
+         								<li>
+         									<a href="#by_locations">Locations</a>
+         								</li>
                               </ul>
+							  <ul id="search_by_other" class="dropdown-menu" role="menu"></ul>
                            </div>
                            <input type="hidden" name="search_param" value="all" id="search_param">
-                           <input type="search "  class="form-control input-lg" data-provide="typeahead" placeholder="Search term..." autocomplete="off" data-items="6" data-source="[&quot;Accpunturist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY &quot;,&quot;Aethestic Medicine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Aethestic dentist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Aethestic Surgeon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Ajay Sharma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOCTOR &quot;,&quot;Allergist/imunologist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;]">
+                           <input type="search" id="search_special" class="form-control input-lg" data-provide="typeahead" placeholder="Specialities, Doctors, Clinics..." autocomplete="off" data-items="6" data-source="[&quot;Accpunturist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY &quot;,&quot;Aethestic Medicine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Aethestic dentist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Aethestic Surgeon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;,&quot;Ajay Sharma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOCTOR &quot;,&quot;Allergist/imunologist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITY&quot;]">
                            <span class="input-group-btn input-group-lg input-group-md ">
                            <button id="btnsearch" class="btn btn-default btn-lg" type="button">
                            <span class="fa fa-search"></span>
@@ -535,6 +535,7 @@
                      </div>
                   </div>
                </footer>
+               
             </div>
             <!-- Modal Popup For Login -->
             <div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
@@ -551,7 +552,7 @@
                         <div class="row">
                            <!-- <div class="col-md-6 scrollpoint sp-effect1"><img src="img/doctor.png" alt="vector-doctor" class="img-responsive"></div>-->
                            <div class="col-md-12 ">
-                              <form class="login-form scrollpoint sp-effect2"  method="post" action="#" data-toggle="validator" >
+                              <form class="login-form scrollpoint sp-effect2"  data-toggle="validator" method="post" action="#" >
                                 login using social media account to create a profile on Dial- Health24/7
                                  <div class="social-buttons">
                                     <a href="http://www.facebook.com"  target="_blank" class="btn btn-fb">
@@ -562,13 +563,14 @@
                                     </a>
                                  </div>
                                  or
-                                 <div class="form-group">
-                                 <label>Email-Id</label>
-                                    <input type="email" class="form-control" required >
-                                 </div>
+                                  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    <div class="help-block with-errors"></div>
+  </div>
                                  <div class="form-group">
                                  <label>Password</label>
-                                    <input type="password" class="form-control" required  >
+                                    <input type="password" class="form-control"  >
                                     <div class="help-block text-right">
                                        <a href="javascript:;" id="forget-password">Forget the password ?</a>
                                     </div>
@@ -683,6 +685,7 @@
                               </div>
                            </div>
                               </form>
+
                               <div class="clearfix"></div>
                               <form class="activation-form scrollpoint sp-effect2" role="form" >
                                  <h2>Activate Now</h2>
@@ -709,28 +712,24 @@
                </div>
             </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/slick.min.js"></script>
             <script src="js/placeholdem.min.js"></script>
-            <script type="text/javascript" src="js/typeahead.bundle.js"></script>
+            <script type="text/javascript" src="js/jquery.typeahead.js"></script>
+			 <script type="text/javascript" src="js/typeahead.bundle.js"></script>
             <script src="js/waypoints.min.js"></script>
             <script src="js/scripts.js"></script>
-            <script type="text/javascript" src="js/jquery.form.js"></script>
-           
-            
+			<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
             <script>
-               $(document).ready(function() {
-                   dialhealth.preLoader();
-            $(".login-form").validate();
-            $('.dropdown-toggle').dropdown();
-
-               });
-                
-
-              
+				$(document).ready(function() {
+					$('.dropdown-toggle').dropdown();
+					dialhealth.preLoader();
+					
+                });
             </script>
-
-               <a href="#0" class="cd-top">Top</a>
+            <a href="#0" class="cd-top">Top</a>
          </body>
       </html>
 
