@@ -565,12 +565,13 @@
                                  or
                                   <div class="form-group">
     <label for="inputEmail" class="control-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    <input type="email" class="form-control" id="inputEmail" data-error="Bruh, that email address is invalid" required>
     <div class="help-block with-errors"></div>
   </div>
                                  <div class="form-group">
                                  <label>Password</label>
-                                    <input type="password" class="form-control"  >
+                                    <input type="password" class="form-control" data-error="Please Enter Correct Password" required >
+                                    <div class="help-block with-errors"></div>
                                     <div class="help-block text-right">
                                        <a href="javascript:;" id="forget-password">Forget the password ?</a>
                                     </div>
@@ -591,25 +592,26 @@
                                     </a>
                                  </div>
                               </form>
-                              <form class="forget-form scrollpoint sp-effect2" role="form"  >
+                              <form data-toggle="validator" class="forget-form scrollpoint sp-effect2" role="form"  >
                                  <h2>Forget Password ?</h2>
                                  <p>
                                     Enter your e-mail address below to reset your password.
                                  </p>
                                  <div class="form-group">
                                     <div class="input-icon">
-                                       <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"/>
+                                       <input class="form-control" type="email" autocomplete="off" data-error="Bruh, that email address is invalid" required name="email"/>
                                     </div>
+                                    <div class="help-block with-errors"></div>
                                  </div>
                                  <div class="form-actions">
                                     <button type="button" id="back-btn" class="btn btn-primary inverse">
                                     Go Back </button>
-                                    <button type="submit" class="btn btn-primary inverse pull-right" id="activation">
+                                    <button type="submit" class="btn btn-primary inverse pull-right">
                                     Submit 
                                     </button>
                                  </div>
                               </form>
-                              <form class="register-form" action="index.html" method="post">
+                              <form class="register-form" data-toggle="validator" action="#" method="post">
                                  <div class="row">
                                     <div class="col-md-12">
 
@@ -624,23 +626,26 @@
                                  </p>
                                  <div class="form-group">
                                     <div class="input-icon">
-                                       <input class="form-control" type="text" placeholder="Name" name="fullname"/>
+                                       <input class="form-control"  data-error="Enter Your Name" required type="text" placeholder="Name" name="fullname"/>
                                     </div>
+                                    <div class="help-block with-errors"></div>
                                  </div>
                                  <div class="form-group">
                                     <div class="input-icon">
-                                       <input class="form-control" type="text" placeholder="Last Name" name="fullname"/>
+                                       <input class="form-control" type="text" data-error="Bruh!! Last name is Necessary" placeholder="Last Name" name="fullname"/>
                                     </div>
+                                    <div class="help-block with-errors"></div>
                                  </div>
                                  <div class="form-group">
                                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
                                     <div class="input-icon">
-                                       <input class="form-control " type="text" placeholder="Email" name="email"/>
+                                       <input class="form-control " data-error="Bruh, that email address is invalid" required type="text" placeholder="Email" name="email"/>
                                     </div>
+                                    <div class="help-block with-errors"></div>
                                  </div>
                                  <div class="form-group">
                                     <div class="input-icon">
-                                       <input class="form-control" type="text" placeholder="Mobile No." name="address"/>
+                                       <input class="form-control" type="text" data-error="Mobile no is required" required placeholder="Mobile No." name="address"/>
                                     </div>
                                  </div>
                                  </div> 
@@ -652,13 +657,15 @@
                                  <div class="form-group">
                                     <div class="input-icon">
                                     <label>Password </label>
-                                       <input class="form-control " type="password" autocomplete="off" id="register_password"  name="password"/>
+                                       <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+      <span class="help-block">Minimum of 6 characters</span>
                                     </div>
                                  </div>
                                  <div class="form-group">
                                     
                                     <label>Re-type Password </label>   
-                                          <input class="form-control " type="password" autocomplete="off"  name="rpassword"/>
+                                         <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+      <div class="help-block with-errors"></div>   
                                     
                                     </div>
                                  </div>
@@ -687,14 +694,15 @@
                               </form>
 
                               <div class="clearfix"></div>
-                              <form class="activation-form scrollpoint sp-effect2" role="form" >
+                              <form class="activation-form scrollpoint sp-effect2" data-toggle="validator" role="form" >
                                  <h2>Activate Now</h2>
                                  <p>
                                     Enter the code what you got in your email & reset your password.
                                  </p>
                                  <div class="form-group">
                                     <div class="input-icon">
-                                       <input class="form-control" type="password" autocomplete="off" placeholder="Enter code"  name="activate"/>
+                                       <input type="password" data-minlength="6" class="form-control" i placeholder="Enter Code to Activate your Account" data-error="Please Enter your Activation Code Bruh!!" required>
+      <div class="help-block with-errors"></div>
                                     </div>
                                  </div>
                                  <div class="form-actions">
@@ -716,12 +724,12 @@
             <script src="js/bootstrap.min.js"></script>
             <script src="js/slick.min.js"></script>
             <script src="js/placeholdem.min.js"></script>
-            <script type="text/javascript" src="js/jquery.typeahead.js"></script>
+            
 			 <script type="text/javascript" src="js/typeahead.bundle.js"></script>
             <script src="js/waypoints.min.js"></script>
             <script src="js/scripts.js"></script>
 			<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+			<script type="text/javascript" src="js/validator.min.js"></script>
             <script>
 				$(document).ready(function() {
 					$('.dropdown-toggle').dropdown();
