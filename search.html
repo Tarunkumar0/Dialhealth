@@ -1,0 +1,294 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>
+<html lang="en" class="no-js ie6">
+   <![endif]-->
+   <!--[if IE 7]>
+   <html lang="en" class="no-js ie7">
+      <![endif]-->
+      <!--[if IE 8]>
+      <html lang="en" class="no-js ie8">
+         <![endif]-->
+         <!--[if gt IE 8]>
+         <!-->
+            <html lang="en" class="no-js">
+                <!--
+                <![endif]-->
+         <head>
+            <meta charset="UTF-8">
+            <title>Dial Health 24/7 | Home </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <link rel="shortcut icon" href="favicon.png">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/animate.css">
+            <link rel="stylesheet" href="css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/slick.css">
+            <link rel="stylesheet" href="css/style.css">
+            <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+         </head>
+         <body>
+
+            <div class="pre-loader">
+               <div class="load-con">
+                  <img src="img/freeze/logo.png" class="animated fadeInDown" alt="">
+                  <div class="spinner">
+                     <div class="bounce1"></div>
+                     <div class="bounce2"></div>
+                     <div class="bounce3"></div>
+                  </div>
+               </div>
+            </div>
+            <header>
+               <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                  <div class="container">
+                     <!-- Brand and toggle get grouped for better mobile display -->
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="fa fa-bars fa-lg"></span>
+                        </button>
+                        <button type="button" class="navbar-toggle" style="border:none!important" data-target="#loginModal"  data-toggle="modal"> 
+                        Login 
+                        </button>
+                        <a id="home" class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="" class="logo">
+                        </a>
+                     </div>
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                           <li>
+                              <a href="#home">Home</a>
+                           </li>
+                           <li>
+                              <a href="#aboutus">About us</a>
+                           </li>
+                           <li>
+                              <a href="#services">Services</a>
+                           </li>
+                           <li>
+                              <a href="#contact">Contact us</a>
+                           </li>
+                           <li>
+                              <button class="btn btn-primary inverse bt-small" data-target="#loginModal"type="button"  data-toggle="modal">Login</button>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- /.navbar-collapse -->
+                  </div>
+                  <!-- /.container-->
+               </nav>
+               
+            </header>
+            
+               
+            
+            <!-- Modal Popup For Login -->
+            <div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+               <div class="modal-dialog modal-sm">
+                  <div  class="modal-content">
+                     <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Join Dial-Health24/7 today</h4>
+                     </div>
+                     <div class="modal-body">
+                        <!-- The form is placed inside the body of modal -->
+                        <div class="row">
+                           <!-- <div class="col-md-6 scrollpoint sp-effect1"><img src="img/doctor.png" alt="vector-doctor" class="img-responsive"></div>-->
+                           <div class="col-md-12 ">
+                              <form class="login-form scrollpoint sp-effect2"  data-toggle="validator" method="post" action="#" >
+                                login using social media account to create a profile on Dial- Health24/7
+                                 <div class="social-buttons">
+                                    <a href="http://www.facebook.com"  target="_blank" class="btn btn-fb">
+                                    <i class="fa fa-facebook"></i> Facebook
+                                    </a>
+                                    <a href="http://www.twitter.com"  target="_blank" class="btn btn-gp">
+                                    <i class="fa fa-google-plus"></i> Google-Plus
+                                    </a>
+                                 </div>
+                                 or
+                                  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" data-error="Bruh, that email address is invalid" required>
+    <div class="help-block with-errors"></div>
+  </div>
+                                 <div class="form-group">
+                                 <label>Password</label>
+                                    <input type="password" class="form-control" data-error="Please Enter Correct Password" required >
+                                    <div class="help-block with-errors"></div>
+                                    <div class="help-block text-right">
+                                       <a href="javascript:;" id="forget-password">Forget the password ?</a>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <button type="submit" class="btn btn-primary inverse btn-block">Sign in</button>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox"> keep me logged-in
+                                    </label>
+                                 </div>
+                                 <div class="bottom text-center">
+                                    Don't have an account yet ? 
+                                    <br>
+                                    <a href="javascript:;" id="register-btn">
+                                    <b>Create an account</b>
+                                    </a>
+                                 </div>
+                              </form>
+                              <form data-toggle="validator" class="forget-form scrollpoint sp-effect2" role="form"  >
+                                 <h2>Forget Password ?</h2>
+                                 <p>
+                                    Enter your e-mail address below to reset your password.
+                                 </p>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="email" autocomplete="off" data-error="Bruh, that email address is invalid" required name="email"/>
+                                    </div>
+                                    <div class="help-block with-errors"></div>
+                                 </div>
+                                 <div class="form-actions">
+                                    <button type="button" id="back-btn" class="btn btn-primary inverse">
+                                    Go Back </button>
+                                    <button type="submit" class="btn btn-primary inverse pull-right">
+                                    Submit 
+                                    </button>
+                                 </div>
+                              </form>
+                              <form class="register-form" data-toggle="validator" action="#" method="post">
+                                 <div class="row">
+                                    <div class="col-md-12">
+
+                                                             <h2>Register Now </h2>
+                                
+                                    
+                                    <div class="col-md-6  scrollpoint sp-effect2">
+                                       <!-- <img src="img/doctor.png" alt="vector-doctor" class="img-responsive text-center"> -->
+
+ <p>
+                                    Enter your personal details below:
+                                 </p>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control"  data-error="Enter Your Name" required type="text" placeholder="Name" name="fullname"/>
+                                    </div>
+                                    <div class="help-block with-errors"></div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="text" data-error="Bruh!! Last name is Necessary" placeholder="Last Name" name="fullname"/>
+                                    </div>
+                                    <div class="help-block with-errors"></div>
+                                 </div>
+                                 <div class="form-group">
+                                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                    <div class="input-icon">
+                                       <input class="form-control " data-error="Bruh, that email address is invalid" required type="text" placeholder="Email" name="email"/>
+                                    </div>
+                                    <div class="help-block with-errors"></div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input class="form-control" type="text" data-error="Mobile no is required" required placeholder="Mobile No." name="address"/>
+                                    </div>
+                                 </div>
+                                 </div> 
+                                 <div class="col-md-6  scrollpoint sp-effect2">
+                                 <p>
+                                    Enter your account details below:
+                                 </p>
+                                 
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                    <label>Password </label>
+                                       <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+      <span class="help-block">Minimum of 6 characters</span>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    
+                                    <label>Re-type Password </label>   
+                                         <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+      <div class="help-block with-errors"></div>   
+                                    
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label>
+                                    <input type="checkbox" name="tnc"/> I agree to the 
+                                    <a href="#">
+                                    Terms and Conditions </a>
+                                    and 
+                                    <a href="#">
+                                    Privacy Policy </a>
+                                    </label>
+                                    <div id="register_tnc_error"></div>
+                                 </div></div>
+<div class="clearfix"></div>
+                                 <div class="form-actions">
+                                    <button id="register-back-btn" type="button" class="btn btn-primary inverse">
+                                    Go Back </button>
+                                    <button type="submit" id="register-submit-btn" class="btn btn-primary inverse pull-right">
+                                    Register Me 
+                                    </button>
+                                 </div>
+                              </div>
+                              </div>
+                           </div>
+                              </form>
+
+                              <div class="clearfix"></div>
+                              <form class="activation-form scrollpoint sp-effect2" data-toggle="validator" role="form" >
+                                 <h2>Activate Now</h2>
+                                 <p>
+                                    Enter the code what you got in your email & reset your password.
+                                 </p>
+                                 <div class="form-group">
+                                    <div class="input-icon">
+                                       <input type="password" data-minlength="6" class="form-control" i placeholder="Enter Code to Activate your Account" data-error="Please Enter your Activation Code Bruh!!" required>
+      <div class="help-block with-errors"></div>
+                                    </div>
+                                 </div>
+                                 <div class="form-actions">
+                                    <button type="button" id="back-btn" class="btn btn-primary inverse">
+                                    Go Back </button>
+                                    <button type="submit" class="btn btn-primary inverse pull-right" id="activation">
+                                    Submit 
+                                    </button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/slick.min.js"></script>
+            <script src="js/placeholdem.min.js"></script>
+            
+          <script type="text/javascript" src="js/typeahead.bundle.js"></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/scripts.js"></script>
+         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+         <script type="text/javascript" src="js/validator.min.js"></script>
+            <script>
+            $(document).ready(function() {
+               $('.dropdown-toggle').dropdown();
+               dialhealth.preLoader();
+               
+                });
+            </script>
+            <a href="#0" class="cd-top">Top</a>
+         </body>
+      </html>
+
