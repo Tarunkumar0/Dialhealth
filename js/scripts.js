@@ -97,8 +97,34 @@ var dialhealth = {
     placeHold: function(){
         // run Placeholdem on all elements with placeholders
         Placeholdem(document.querySelectorAll('[placeholder]'));
-    }
+    },
 
+initSliderRangeprice: function () {
+            $( "#slider-range" ).slider({
+              range: true,
+              min: 0,
+              max: 5000,
+              values: [ 100, 500 ],
+              slide: function( event, ui ) {
+                $( "#amount" ).val( "Rs." + ui.values[ 0 ] + " - Rs." + ui.values[ 1 ] );
+              }
+            });
+            $( "#amount" ).val( "Rs." + $( "#slider-range" ).slider( "values", 0 ) +
+            " - Rs." + $( "#slider-range" ).slider( "values", 1 ) );
+        },
+        initSliderRangedistance: function () {
+            $( "#slider-range2" ).slider({
+              range: true,
+              min: 0,
+              max: 500,
+              values: [ 30, 100 ],
+              slide: function( event, ui ) {
+                $( "#distance" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+              }
+            });
+            $( "#distance" ).val( + $( "#slider-range2" ).slider( "values", 0 ) +
+            " - " + $( "#slider-range2" ).slider( "values", 1 ) );
+        }
 }; // dialhealth
 
 
@@ -119,10 +145,13 @@ $(document).ready(function() {
 
     dialhealth.animateScript();
 
-   dialhealth.scrollMenu();
+    dialhealth.scrollMenu();
 
     dialhealth.placeHold();
+    
+    dialhealth.initSliderRangeprice();
 
+    dialhealth.initSliderRangedistance();
     
 
 });
@@ -295,6 +324,8 @@ $( "#search_special" ).blur(function(event) {
     $( "#search_special" ).val( $txtVal );
   }
 });
+
+
 
 
 
